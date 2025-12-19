@@ -7,33 +7,43 @@ Overview
 This project allows users to upload any thumbnail image and get an instant prediction of its quality.
 It demonstrates AI, computer vision, and large-scale data processing in a practical web application.
 
-Features
+🚀Features
 
 ✅ AI-Powered Thumbnail Classification
+
 ✅ Predicts Good or Bad Quality
+
 ✅ Analyzes Visual Features: brightness, contrast, color vividness, text readability, sharpness, clutter, and presence of human faces
+
 ✅ Clean Web Interface using Flask and Bootstrap
+
 ✅ No Login Required – fully privacy-friendly
+
 ✅ Instant Predictions – runs directly in the browser
 
 
-Installation
+🔧Installation
 
 1️⃣ Download ZIP from GitHub & Extract
+
     No extra configuration needed.
+    
 2️⃣ Run the Project
+
     python app.py
+    
 3️⃣ Open in Browser
+
     http://127.0.0.1:5000/
 
-How to Use
+🗝️ How to Use
 
-Open the web app in your browser
+1.Open the web app in your browser
 
-Upload a thumbnail image
+2.Upload a thumbnail image
 
-Click Predict
+3.Click Predict
 
-The system will show whether the thumbnail is Good or Bad
+4.The system will show whether the thumbnail is Good or Bad
 
     
