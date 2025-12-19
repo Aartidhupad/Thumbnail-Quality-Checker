@@ -1,4 +1,4 @@
-Thumbnail Quality Checker
+⭐Thumbnail Quality Checker⭐
 
 A web-based AI tool that classifies YouTube thumbnails as Good or Bad based on visual features. Built to be simple, fast, and effective for analyzing thumbnail quality.
 
@@ -26,15 +26,15 @@ It demonstrates AI, computer vision, and large-scale data processing in a practi
 
 1️⃣ Download ZIP from GitHub & Extract
 
-    No extra configuration needed.
+  No extra configuration needed.
     
 2️⃣ Run the Project
 
-    python app.py
-    
+  python app.py
+
 3️⃣ Open in Browser
 
-    http://127.0.0.1:5000/
+  http://127.0.0.1:5000/
 
 🗝️ How to Use
 
