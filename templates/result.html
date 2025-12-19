@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", Arial, sans-serif;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .card {
+            background: #ffffff;
+            color: #333;
+            width: 485px;
+            height: 470px;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            text-align: center;
+            margin: auto;
+            animation: slideIn 0.8s ease;
+        }
+
+        h1 {
+            color: #8b5cf6;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .thumbnail {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 4px solid #ddd;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+        .thumbnail:hover {
+            transform: scale(1.03);
+        }
+
+        .result {
+            font-size: 22px;
+            color: #ec4899;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 0px;
+            text-decoration: none;
+            background-color: #8b5cf6;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        a:hover {
+            background-color: #7c3aed;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            font-size: 18px;
+            color: #f9d8ff;
+            margin-top: auto;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Prediction Result</h1>
+
+        <img class="thumbnail"
+             src="{{ url_for('static', filename='uploads/' + image) }}"
+             alt="Uploaded Thumbnail">
+
+        <p class="result">Prediction: {{ prediction }}</p>
+
+        <a href="{{ url_for('index') }}">Test Another</a>
+    </div>
+
+    <footer>
+        © 2025 Thumbnail Quality Checker | Built with ❤️ by Aarti  
+    </footer>
+</body>
+</html>
